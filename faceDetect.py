@@ -4,7 +4,7 @@ import cv2
 cascadePath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath)
 
-def faceDetect(img):
+def face(img):
     # Detect Faces
     faces = faceCascade.detectMultiScale(img, 1.3, 5)
     # get the cordnates of the face
